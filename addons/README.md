@@ -1,2 +1,2 @@
-# BlenderBasics
+# Addons Folders
 Completed Addons
