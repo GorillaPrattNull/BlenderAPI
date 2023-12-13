@@ -1,0 +1,39 @@
+Accessing Data-Blocks
+
+bpy.data.objects
+<bpy_collection[3], BlendDataObjects>
+bpy.data.scenes
+<bpy_collection[1], BlendDataScenes>
+bpy.data.materials
+<bpy_collection[1], BlendDataMaterials>
+
+------------------------------------
+
+Accessing Collections
+
+list(bpy.data.objects)
+[bpy.data.objects["Cube"], bpy.data.objects["Plane"]]
+bpy.data.objects['Cube']
+bpy.data.objects["Cube"]
+bpy.data.objects[0]
+bpy.data.objects["Cube"]
+
+------------------------------------
+
+Accessing Attributes
+
+bpy.data.objects[0].name
+'Camera'
+bpy.data.scenes["Scene"]
+bpy.data.scenes['Scene']
+bpy.data.materials.new("MyMaterial")
+bpy.data.materials['MyMaterial']
+
+------------------------------------
+
+Data Creation/Removal
+
+mesh = bpy.data.meshes.new(name="MyMesh")
+print(mesh)
+<bpy_struct, Mesh("MyMesh.001")>
+bpy.data.meshes.remove(mesh)
